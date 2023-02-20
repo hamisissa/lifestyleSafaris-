@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Montserrat', sans-serif; */
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Puzzled_2;
+    src: url(fonts/Puzzled_2.ttf);
+    font-size: 3rem;
+}
+
+.h1, h1{
+    font-family: 'Puzzled_2';
+        font-size: 64px !important;
+    
+}
+/*button*/
+
+.btn{
+    width: 170px;
+    padding: 50px 20px;
+    display: block;
+    background: #CDB15A !important;
+    text-decoration: none !important;
+    color: #fff !important;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+a:hover{
+    color: #ffff !important;
+
+}
+
+a{
+    color: #ffff !important;
+
+}
+
+/*----------------- navbar ------------------*/
+
+nav {
+  z-index: 1000;
+  background-color: transparent;
+
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  }
+
+.navbar-brand{
+    width: 60%;
+}
+
+nav button{
+    float: right;
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    text-align: right;
+}
+
+nav ul li:hover{
+    color: #CDB15A;
+}
+
+nav ul li a{
+    color: #fff !important;
+}
+
+nav ul li a:hover{
+   color: #CDB15A !important;
+}
+
+
+
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.fixed-top {
+  background: #252525;
+  color: #fff !important; 
+  position: fixed;
+  top: -100px;
+  opacity: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.fixed-top.show { 
+  opacity: 1;
+  top: 0;
+}
+
+.navbar .dropdown .dropdown-menu{
+    background:#252525;
+    color: #fff;
+}
+
+.navbar .dropdown .dropdown-menu a:hover{
+    background-color: #CDB15A;
+    color: #fff !important;
+}
+
+.navbar .dropdown:hover .dropdown-menu{
+    display: inline;
+}
+
+.dropdown:hover .dropdown-menu {
+    text-align: right;
+}
+
+/*-------------- home-bg --------------*/
+.home-bg{
+    height: 100vh;
+    background-image:linear-gradient(86deg, rgba(37,37,37,0.7) 33%, rgba(37,37,37,0.7) 99%), url(images/home2.jpg);
+    /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/home2.jpg);  */
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    text-align: left;
+    color: #fff;
+    margin-top: -120px;
+    z-index: 1;
+}
+.home-bg .content{
+    padding: 200px 0px;
+}
+
+.home-bg h2{
+   color: #fff;
+    background-color: transparent;
+}
+@media only screen and (max-width: 600px) {
+    .home-bg {
+        height: 120vh;
+    }
+
+  }
+
+
+
+
+
+/* -----------------Who We Are --------------------- */
+
+.Who-We-Are
+{
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #252525;
+}
+.Who-We-Are .content
+{
+    padding: 90px 0;;
+    text-align: center;
+    color: #fff;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .Who-We-Are .content{
+        text-align: justify  !important;
+    }
+    .Who-We-Are .content p{
+        text-align: justify;
+    }
+    .Who-We-Are .content h1{
+        text-align: left;
+    }
+
+  }
+
+
+/*-------about-----*/
+
+.about{
+    padding: 100px 0;
+    background-color: #252525;
+}
+.about img{
+    max-width: 100%;
+    cursor: pointer;
+}
+.about h2{
+    margin-top: 100px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.about p{
+
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+}
+.about .btn{
+    width: 170px;
+    padding: 15px 10px;
+    display: block;
+    background: #6900d1;
+    text-decoration: none !important;
+    color: #fff !important;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.about h2{
+    margin-top: 50px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.about .btn{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+/*-----------------desination ---------------------*/
+
+
+.desination
+{
+    padding: 20px 0;
+    background: #252525;
+}
+.desination-box img
+{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+.desination .desination-box h4
+{
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    /* bottom: 20%;
+    right: 70%; */
+
+/* /*    center text */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff !important;
+}
+.desination-box
+{
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+
+
+
+/*footer*/
+
+.footer
+{
+    padding: 100px 20px 15px;
+    background: #252525;
+    color: #fff;
+}
+.footer-logo
+{
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.footer h4
+{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.footer p
+{
+    font-size: 12px;
+    text-align: justify;
+    padding-right: 35px;
+}
+.footer .row .fa
+{
+    padding-right: 20px;
+    font-size: 15px;
+}
+.footer hr
+{
+    margin-top: 10px;
+    background: #efefef;
+}
+
+.footer .copyright
+{
+    text-align: center;
+    
+}
+
+
+
+
+/*-- ---------------- banner ---------------------- --*/
+
+.banner
+{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: linear-gradient(0deg, rgba(205,177,90,0.5466561624649859) 31%, rgba(37,37,37,0.8995973389355743) 99%), url(images/zimabwe.jpg); 
+}
+.banner-highlights
+{
+    padding: 90px 0;;
+    text-align: center;
+    color: #fff;
+    
+}
+
+
+
+
+/*features*/
+
+.features
+{
+    padding: 100px 0;
+    background-color: #252525;
+}
+h1
+{
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+.feature-img img
+{
+    width: 100%;
+}
+
+.feature-img
+{
+    position: relative;
+}
+
+.feature-details
+{
+    padding: 20px;
+    text-align: justify;
+}
+.feature-details h4
+{
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.feature-details p{
+    color: #808080 !important;
+}
+
+.feature-box
+{
+    box-shadow: 0 0 10px 1px rgba(37,73,214,0.1);
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.travel-aspirations{
+
+}
+
+
+
+.travel
+{
+    padding: 20px 0;
+    background: #252525;
+}
+.travel img
+{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+/* .travel .travel-box h4
+{
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    /* bottom: 20%;
+    right: 70%; */
+
+/* /*    center text */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff !important;
+}  */
+
+/* .travel .travel-box .btn{
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+} */
+.travel-box
+{
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
